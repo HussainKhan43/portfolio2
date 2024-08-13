@@ -14,13 +14,14 @@ window.onscroll=()=>{
         if(top >= offset && top < offset + height){
             navLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[href*='+id+ ' ]'.classList.add('active');
+                document.querySelector('header nav a[href*='+id+ ' ]').classList.add('active');
             })
         }
     })
 }
 
 menuIcon.onclick=()=>{
-    menuIcon.classList.toggle(fa-solid);
+    menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
