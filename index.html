@@ -28,9 +28,10 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
+        <a href="#project">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <i class="fa-solid fa-moon" id="toggleDark"></i>
       </nav>
     </header>
 
@@ -115,7 +116,7 @@
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects" id="project">
       <h2 class="heading">Projects</h2>
 
       <div class="projects-box">
@@ -132,7 +133,7 @@
         </div>
 
         <div class="project-card">
-          <img src="project 2.png" alt="" width="px"/>
+          <img src="project2.png" alt="" width="px"/>
           <h3>Project 2</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
@@ -209,7 +210,7 @@
           <div class="btn">See Project</div>
         </div>
         <div class="project-card">
-          <img src="project 1.jpg" alt="" />
+          <img src="project9.png" alt="" />
           <h3>Project 9</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
@@ -269,22 +270,26 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact<span> Me</span></h2>
 
-      <form action="">
+      <form action="" onsubmit="return data();">
         <div class="input-group">
-          <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email"  placeholder="Email">
-          </div>
-          <div class="input-box">
-            <input type="number" placeholder="phone Number">
-            <input type="text"  placeholder="Subject">
-          </div>
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" id="name">
+                <span id="nameerror" style="font-size: 15px;"></span>
+                <input type="email" placeholder="Email" id="email">
+                <span id="emailerror"></span>
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Phone Number" id="phonenum">
+                <span id="phonenumerror" style="font-size: 15px;"></span>
+                <input type="text" placeholder="Subject" id="subject">
+            </div>
         </div>
         <div class="input-group-2">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-          <input type="submit" value="Send Message" class="btn">
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
         </div>
-      </form>
+    </form>
+    
     </section>
     <footer class="footer">
       <div class="social">
@@ -303,26 +308,26 @@
       </div>
       <ul class="list">
         <li>
-          <a href="#">FAQ</a>
+          <b><a href="#">FAQ</a></b>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <b><a href="#services">Services</a></b>
         </li>
         <li>
-          <a href="#">About Me</a>
+          <b><a href="#">About Me</a></b>
         </li>
         <li>
-          <a href="projects">Projects</a>
+          <b><a href="#project">Projects</a></b>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <b><a href="#skills">Skills</a></b>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+         <b><a href="#contact">Contact</a></b>
         </li>
       </ul>
       <p class="copyright">
-        @ Hussain Khan |All Rights Resrved
+        <b>@ Hussain Khan | All Rights Resrved</b>
       </p>
     </footer>
     <script src="script.js"></script>

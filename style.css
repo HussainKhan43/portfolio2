@@ -9,6 +9,20 @@
     font-family: "Poppins", sans-serif;
 }
 
+.light{
+    --bg-color: white;
+    --second-bg-color: white;
+    --text-color: black;
+    --main-color:#f60b0b;
+    transition: '2s';
+}
+.dark{
+    --bg-color: black;
+    --second-bg-color: black;
+    --text-color: white;
+    --main-color:#f60b0b;
+    transition: '2s';
+}
 :root{
     --bg-color: #080808;
     --second-bg-color: #1b0000;
@@ -68,6 +82,12 @@ body{
 .navbar a.active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
+}
+
+#toggleDark{
+    font-size: 3rem;
+    padding-left: 25px;
+    cursor: pointer;
 }
 
 #menu-icon{
@@ -567,7 +587,7 @@ transform: scale(1.02);
     text-align: center;
 }
 .footer ul li a{
-    color: white;
+    color: red;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
 }
